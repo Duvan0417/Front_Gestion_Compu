@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { 
-  LayoutDashboard, 
-  Laptop, 
-  Users, 
-  School, 
-  Wrench, 
-  MessageSquare, 
-  Menu 
+import {
+  LayoutDashboard,
+  Laptop,
+  Users,
+  School,
+  Wrench,
+  MessageSquare,
+  Menu
 } from "lucide-react";
 
 export const Sidebar = () => {
@@ -30,7 +30,7 @@ export const Sidebar = () => {
 
       {/* Opciones del menú */}
       <nav className="space-y-4 text-sm">
-        
+
         <Link
           to="/dashboard"
           className={`flex items-center gap-3 p-2 rounded-lg hover:bg-gray-800 transition ${isActive("/dashboard")}`}
@@ -53,14 +53,6 @@ export const Sidebar = () => {
         >
           <School />
           {open && <span>Aprendices</span>}
-        </Link>
-
-        <Link
-          to="/usuarios"
-          className={`flex items-center gap-3 p-2 rounded-lg hover:bg-gray-800 transition ${isActive("/usuarios")}`}
-        >
-          <Users />
-          {open && <span>Usuarios</span>}
         </Link>
 
         <Link
