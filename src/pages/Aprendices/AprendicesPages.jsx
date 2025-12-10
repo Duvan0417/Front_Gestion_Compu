@@ -77,7 +77,7 @@ export default function AprendicesListado() {
               </button>
               <button className="group px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-xl font-medium shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 <UserPlus className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                Registrar Aprendiz
+                <a href="/aprendices/registro">Registrar Aprendiz</a>
               </button>
             </div>
           </div>

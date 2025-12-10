@@ -4,8 +4,11 @@ import Mantenimiento  from './pages/Mantenimiento/MantenimientoPage'
 import Aprendices  from './pages/Aprendices/AprendicesPages'
 import Dañados  from './pages/Dañados/DañadosPages'
 import FormMantenimiento  from './pages/Mantenimiento/Componentes/FormManteni'
-import Computadores  from './pages//Computador/ComputadoresPage'
+import Computadores  from './pages/Computador/ComputadoresPage'
 import DashboardPage  from './pages/Dashboard/DashboardPage'
+import FormDañados  from './pages/Dañados/Components/FormDañados'
+import FormCompu  from './pages/Computador/Components//FormCompu'
+import FormAprendices  from './pages/Aprendices/Components/FormApren'
 
 
 export default function App(){
@@ -19,9 +22,12 @@ return (
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/computadores" element={< Computadores />} />
           <Route path="/aprendices" element={< Aprendices />} />
+          <Route path="/aprendices/registro" element={< FormAprendices />} />
           <Route path="/dañados" element={< Dañados />} />
           <Route path="/mantenimiento/registro" element={< FormMantenimiento />} />
+          <Route path="/dañados/registro" element={< FormDañados />} />
           <Route path="/mantenimiento" element={< Mantenimiento />} />
+          <Route path="/computadores/nuevo" element={< FormCompu />} />
           <Route path="*" element={<div>Página no encontrada</div>} />
         </Routes>
       </div>

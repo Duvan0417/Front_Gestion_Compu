@@ -109,11 +109,11 @@ export default function ComputadoresDanadosListado() {
             <div className="flex items-center gap-3">
               <button className="group px-6 py-3 bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-500 hover:to-pink-500 text-white rounded-xl font-medium shadow-lg shadow-red-500/50 hover:shadow-red-500/70 hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 <FilePlus className="w-5 h-5 group-hover:rotate-90 transition-transform duration-300" />
-                Reportar Daño
+                <a href="/dañados/registro">Reportar Equipo</a>
               </button>
               <button className="group px-6 py-3 bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-500 hover:to-orange-500 text-white rounded-xl font-medium shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/70 hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 <Wrench className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-                Mantenimiento
+                <a href="/mantenimiento">Mantenimiento</a>
               </button>
             </div>
           </div>

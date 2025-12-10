@@ -117,7 +117,7 @@ const ComputerManagementDashboard = () => {
             </div>
             <div className="flex gap-3">
               <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl font-medium shadow-lg shadow-blue-500/50 hover:shadow-blue-500/70 hover:scale-105 transition-all duration-300">
-                Nuevo Computador
+                <a href="/computadores/nuevo">Nuevo Computador</a>
               </button>
               <button className="p-3 bg-slate-800/50 text-slate-300 rounded-xl hover:bg-slate-700 hover:text-white transition-all duration-300">
                 <Settings className="w-6 h-6" />

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Search, Eye, Edit, ListFilter, Monitor, Plus, Download, RefreshCw, CheckCircle2, AlertTriangle, Wrench, XCircle, MapPin, TrendingUp } from "lucide-react";
+import { Search, Eye, Edit, ListFilter, Monitor, Plus, Download, RefreshCw, CheckCircle2, AlertTriangle, Wrench, XCircle, MapPin, TrendingUp, Upload } from "lucide-react";
 import { Sidebar } from "../../Components/Sidebar";
 
 export default function ComputadoresListado() {
@@ -138,11 +138,15 @@ export default function ComputadoresListado() {
               </button>
               <button className="group px-6 py-3 bg-slate-800/50 hover:bg-slate-700 text-white rounded-xl font-medium transition-all duration-300 hover:scale-105 flex items-center gap-2 border border-slate-700/50">
                 <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
+                Importar
+              </button>
+              <button className="group px-6 py-3 bg-slate-800/50 hover:bg-slate-700 text-white rounded-xl font-medium transition-all duration-300 hover:scale-105 flex items-center gap-2 border border-slate-700/50">
+                <Upload className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" />
                 Exportar
               </button>
               <button className="group px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white rounded-xl font-medium shadow-lg shadow-blue-500/50 hover:shadow-blue-500/70 hover:scale-105 transition-all duration-300 flex items-center gap-2">
                 <Plus className="w-5 h-5 group-hover:rotate-90 transition-transform duration-300" />
-                Nuevo Computador
+                <a href="/computadores/nuevo">Nuevo Computador</a>
               </button>
             </div>
           </div>
